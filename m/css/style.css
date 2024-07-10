@@ -1,0 +1,201 @@
+*{
+    /* for troubleshooting 
+    border: 2px solid red;*/
+    color: #AAA;
+    font-family: BebasNeue-Regular;
+    margin: 0 0;
+    text-transform:uppercase;
+}
+html, 
+body {
+    background-color: rgb(39, 39, 39);
+    height: 100%;
+}
+/* main box */
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    min-height: 100%; 
+    background-image:url("../../images/bg.jpg");
+    background-repeat: repeat;
+    background-size: 100% cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+/* title header */
+.headerbg {
+    
+ 
+    background-color: rgba(0, 0, 0, 100);
+}
+.header {
+    text-align: left;
+    justify-content: left;
+    align-content: left;
+    height: 90px;
+    flex: 0 3 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left:10px;
+    padding-top: 10px;
+}
+
+.header2 {
+    text-align: left;
+    justify-content: left;
+    align-content: left;
+    height: 35px;
+    flex: 0 3 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left:10px;
+}
+
+.header a{
+    color: #DDD;
+    text-decoration:none;
+}
+.header h1 {
+   text-shadow:
+    2px  2px 1px #666;
+   font-size: 110px;
+   color: #DDD;
+}
+.header2 h4 {
+    text-shadow:
+     2px  2px 1px #666;
+    font-size: 92px;
+    color: #DDD;
+    text-decoration:none;
+ }
+ .header2 a{
+    color: #DDD;
+    text-decoration:none;
+}
+.menu {
+    flex: 0 2 0;
+    height: 60px;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    align-content: right;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.menu a {
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 60px;
+    font-weight: 200;
+    color: #AAA;
+    transition: 2s;
+}
+.menu a:hover {
+        color: #FFF;
+        transition: 2s;
+}
+.line {
+    background-color: grey;
+    height: 2px;
+    width: 660px;
+    align-self: center;
+}
+.content {
+    flex: 1 0 auto;
+    min-height: 100%;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+.content h2 {
+   text-shadow:
+    1.5px  1.5px 1px #666;
+   color: #DDD;
+   margin-bottom: 0px;
+}
+.content p {
+   color: #AAA;
+   font-size: 42px;
+   
+}
+.home {
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 60px;
+}
+
+.hometext {
+    width:100%;
+    vertical-align:top;
+    padding-top:75px;
+    padding-right:30px
+}
+
+.contentbg {
+    border-radius: 10px;
+    padding: 5px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.600);
+    height: 80vh;
+}
+.copyright {
+    flex: 0 4 0;
+    height: 50px;
+    text-align: right;
+    font-size: 36px;
+}
+.copyright h4 {
+    color: grey;
+    font-size: 36px;
+}
+
+@font-face {
+    font-family: BebasNeue-Regular;
+    src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 1% 1%;
+  box-sizing: border-box;
+  height: 75vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 0.5%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover; 
+  transition: .5s;
+}
+
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobilehome > img {
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  }
