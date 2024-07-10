@@ -35,7 +35,7 @@ body {
     text-align: left;
     justify-content: left;
     align-content: left;
-    height: 90px;
+    height: 4em;
     flex: 0 3 auto;
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@ body {
     text-align: left;
     justify-content: left;
     align-content: left;
-    height: 35px;
+    height: 5em;
     flex: 0 3 auto;
     display: flex;
     flex-direction: column;
@@ -63,13 +63,13 @@ body {
 .header h1 {
    text-shadow:
     2px  2px 1px #666;
-   font-size: 110px;
+   font-size: 5em;
    color: #DDD;
 }
 .header2 h4 {
     text-shadow:
      2px  2px 1px #666;
-    font-size: 92px;
+    font-size: 4.15em;
     color: #DDD;
     text-decoration:none;
  }
@@ -79,7 +79,7 @@ body {
 }
 .menu {
     flex: 0 2 0;
-    height: 60px;
+    height: 1.5em;
     display: flex;
     text-align: right;
     justify-content: right;
@@ -91,7 +91,7 @@ body {
     text-decoration: none;
     margin-right: 20px;
     margin-left: 20px;
-    font-size: 60px;
+    font-size: 2.5em;
     font-weight: 200;
     color: #AAA;
     transition: 2s;
@@ -115,22 +115,29 @@ body {
     align-content: center;
     margin-top: 10px;
 }
-.content h2 {
+.content .title {
    text-shadow:
     1.5px  1.5px 1px #666;
    color: #DDD;
    margin-bottom: 0px;
+   position:absolute;
+   position: absolute; 
+   left: 0; 
+   right: 0; 
+   margin-left: auto; 
+   margin-right: auto; 
+   font-size:4em;
 }
 .content p {
    color: #AAA;
-   font-size: 42px;
+   font-size: 1.5em;
    
 }
 .home {
     width:95%;
     margin-left:auto;
     margin-right:auto;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .hometext {
@@ -156,7 +163,7 @@ body {
 }
 .copyright h4 {
     color: grey;
-    font-size: 36px;
+    font-size: 0.5em;
 }
 
 @font-face {
