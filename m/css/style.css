@@ -10,7 +10,7 @@ html,
 body {
     background-color: rgb(39, 39, 39);
     height: 100%;
-    aspectratio: 9/16;
+    aspect-ratio: 9/16;
 }
 /* main box */
 .main {
