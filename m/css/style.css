@@ -176,7 +176,7 @@ body {
   width: 100%;
   padding: 1% 1%;
   box-sizing: border-box;
-  height: 30vh;
+  height: 28vh;
 }
 
 .box {
@@ -198,8 +198,8 @@ body {
 
 .box:hover { flex: 1 1 100%; }
 .box:hover > img {
-  width: auto;
-  height: 100%;
+  width: 85vw;
+  height: auto;
 }
 
 .mobilehome > img {
