@@ -10,9 +10,9 @@
 html, 
 body {
     background-color: rgb(39, 39, 39);
-    height: 100vw;
-    width:100%;
-    aspect-ratio: 9/16;
+    min-height: 100vh;
+    width: 100%;
+   
 }
 /* main box */
 .main {
@@ -116,6 +116,7 @@ body {
     justify-content: center;
     align-content: center;
     margin-top: 10px;
+    height:100vh;
 }
 .content .title {
    text-shadow:
@@ -152,7 +153,7 @@ body {
 .contentbg {
     border-radius: 10px;
     padding: 30px;
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.600);
     height: 90vh;
