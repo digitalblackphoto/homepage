@@ -156,15 +156,29 @@ body {
     width: 85vw;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.600);
-    height: 90vh;
+    height: 100vh;
 }
 .copyright {
     flex: 0 4 0;
     height: 50px;
+    padding-top: 70px;
     text-align: right;
     font-size: 36px;
 }
+
 .copyright h4 {
+    color: grey;
+    font-size: 0.5em;
+}
+
+.copyrightg {
+    flex: 0 4 0;
+    height: 50px;
+    padding-top: 70px;
+    text-align: right;
+    font-size: 36px;
+}
+.copyrightg h4 {
     color: grey;
     font-size: 0.5em;
 }
