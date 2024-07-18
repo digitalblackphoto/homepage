@@ -229,7 +229,7 @@ body {
   .gallery {
     --s: 150px; /* control the size */
     --g: 10px;  /* control the gap */
-    --f: 2;   /* control the scale factor */
+    --f: 1;   /* control the scale factor */
     
     display: grid;
     gap: var(--g);
@@ -256,6 +256,7 @@ body {
     filter: grayscale(0);
     width:  calc(var(--s)*var(--f));
     height: calc(var(--s)*var(--f));
+    max-width: 90vh;
   }
   
   
