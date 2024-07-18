@@ -5,11 +5,15 @@
     font-family: BebasNeue-Regular;
     margin: 0 0;
     text-transform:uppercase;
+    
 }
 html, 
 body {
     background-color: rgb(39, 39, 39);
-    height: 100%;
+    height: 100vh;
+    width: 100%;
+   
+   
 }
 /* main box */
 .main {
@@ -18,12 +22,12 @@ body {
     width: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
-    min-height: 100%; 
+    min-height: 100vh;
     background-image:url("../../images/bg.jpg");
     background-repeat: repeat;
     background-size: 100% cover;
     background-position: center top;
-    background-attachment: fixed;
+    background-attachment:scroll;
 }
 /* title header */
 .headerbg {
@@ -91,7 +95,7 @@ body {
     text-decoration: none;
     margin-right: 20px;
     margin-left: 20px;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 200;
     color: #AAA;
     transition: 2s;
@@ -108,12 +112,12 @@ body {
 }
 .content {
     flex: 1 0 auto;
-    min-height: 100%;
     gap: 10px;
     text-align: center;
     justify-content: center;
     align-content: center;
     margin-top: 10px;
+    min-height:100vw;
 }
 .content .title {
    text-shadow:
@@ -130,38 +134,52 @@ body {
 }
 .content p {
    color: #AAA;
-   font-size: 1.5em;
+   font-size: 1.25em;
    
 }
-.home {
-    width:95%;
+.mobilehome {
+    width:75vw;
     margin-left:auto;
     margin-right:auto;
     margin-top: 40px;
 }
 
 .hometext {
-    width:100%;
+    width:70vw;
     vertical-align:top;
     padding-top:75px;
-    padding-right:30px
+    
 }
 
 .contentbg {
     border-radius: 10px;
-    padding: 5px;
-    width: 95%;
+    padding: 30px;
+    width: 85vw;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.600);
-    height: 80vh;
+    min-height: 100vw;
 }
 .copyright {
     flex: 0 4 0;
     height: 50px;
+    padding-top: 70px;
     text-align: right;
     font-size: 36px;
 }
+
 .copyright h4 {
+    color: grey;
+    font-size: 0.5em;
+}
+
+.copyrightg {
+    flex: 0 4 0;
+    height: 50px;
+    padding-top: 70px;
+    text-align: right;
+    font-size: 36px;
+}
+.copyrightg h4 {
     color: grey;
     font-size: 0.5em;
 }
@@ -176,7 +194,7 @@ body {
   width: 100%;
   padding: 1% 1%;
   box-sizing: border-box;
-  height: 28vh;
+  height: 100%;
 }
 
 .box {
@@ -206,3 +224,40 @@ body {
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
   }
+
+
+
+  .gallery {
+    --s: 150px; /* control the size */
+    --g: 5px;  /* control the gap */
+    --f: 2;   /* control the scale factor */
+
+    
+    display: grid;
+    gap: var(--g);
+    width: 85vw;
+    height: 100vw;
+    margin-left:auto;
+    margin-right:auto;
+    grid-template-columns: repeat(3,auto);
+  }
+  
+  .gallery > img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: .35s linear;
+  }
+  
+  .gallery img:hover{
+    filter: grayscale(0);
+    width:  calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+    ;
+  }
+  
+  
