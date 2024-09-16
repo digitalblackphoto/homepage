@@ -1,0 +1,279 @@
+*{
+    /* for troubleshooting 
+    border: 2px solid red;*/
+    color: #AAA;
+    font-family: BebasNeue-Regular;
+    margin: 0 0;
+    text-transform:uppercase;
+    
+  }
+  html, 
+  body {
+    background-color: rgb(39, 39, 39);
+    height: 100vh;
+    width: 100%;
+   
+   
+  }
+  /* main box */
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-image:url("../../images/bg.jpg");
+    background-repeat: repeat;
+    background-size: 100% cover;
+    background-position: center top;
+    background-attachment:scroll;
+  }
+  /* title header */
+  .headerbg {
+    
+  
+    background-color: rgba(0, 0, 0, 100);
+  }
+  .header {
+    text-align: left;
+    justify-content: left;
+    align-content: left;
+    height: 4em;
+    flex: 0 3 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left:10px;
+    padding-top: 10px;
+  }
+  
+  .header2 {
+    text-align: left;
+    justify-content: left;
+    align-content: left;
+    height: 5em;
+    flex: 0 3 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left:10px;
+  }
+  
+  .header a{
+    color: #DDD;
+    text-decoration:none;
+  }
+  .header h1 {
+   text-shadow:
+    2px  2px 1px #666;
+   font-size: 5em;
+   color: #DDD;
+  }
+  .header2 h4 {
+    text-shadow:
+     2px  2px 1px #666;
+    font-size: 4.15em;
+    color: #DDD;
+    text-decoration:none;
+  }
+  .header2 a{
+    color: #DDD;
+    text-decoration:none;
+  }
+  .menu {
+    flex: 0 2 0;
+    height: 1.5em;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    align-content: right;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .menu a {
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 2em;
+    font-weight: 200;
+    color: #AAA;
+    transition: 2s;
+  }
+  .menu a:hover {
+        color: #FFF;
+        transition: 2s;
+  }
+  .line {
+    background-color: grey;
+    height: 2px;
+    width: 660px;
+    align-self: center;
+  }
+  .content {
+    flex: 1 0 auto;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    min-height:100vw;
+  }
+  .content .title {
+   text-shadow:
+    1.5px  1.5px 1px #666;
+   color: #DDD;
+   margin-bottom: 0px;
+   position:absolute;
+   position: absolute; 
+   left: 0; 
+   right: 0; 
+   margin-left: auto; 
+   margin-right: auto; 
+   font-size:4em;
+  }
+  .content p {
+   color: #AAA;
+   font-size: 1.25em;
+   
+  }
+  .mobilehome {
+    width:75vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 40px;
+  }
+  
+  .hometext {
+    width:70vw;
+    vertical-align:top;
+    padding-top:75px;
+    
+  }
+  
+  .contentbg {
+    border-radius: 10px;
+    padding: 30px;
+    width: 85vw;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.600);
+    min-height: 100vw;
+  }
+  .copyright {
+    flex: 0 4 0;
+    height: 50px;
+    padding-top: 70px;
+    text-align: right;
+    font-size: 36px;
+  }
+  
+  .copyright h4 {
+    color: grey;
+    font-size: 0.5em;
+  }
+  
+  .copyrightg {
+    flex: 0 4 0;
+    height: 50px;
+    padding-top: 70px;
+    text-align: right;
+    font-size: 36px;
+  }
+  .copyrightg h4 {
+    color: grey;
+    font-size: 0.5em;
+  }
+  
+  @font-face {
+    font-family: BebasNeue-Regular;
+    src: url("../fonts/BebasNeue-Regular.ttf");
+  }
+  
+  .container {
+  display: flex;
+  margin-left:auto;
+  margin-right:auto;
+  width: 100%;
+  padding: 1% 1%;
+  box-sizing: border-box;
+  height: 100%;
+  }
+  
+  
+  
+  
+  .div, label {
+      position:absolute;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+      
+  
+  
+    body .container {
+     
+      transform: translate(5vw, 0);
+      width: 100%;
+      height: 75vw;
+    }
+    body .container [class*=item] {
+      width: 33%;
+      height: 33%;
+      border: 1px solid transparent;
+      background: url() center center/cover no-repeat;
+      transition: all 0.5s ease-in-out;
+      z-index: 0;
+    }
+    body .container [class*=item]:hover {
+      border: 1px solid grey;
+      transition-duration:0.35s;
+      z-index: 1;
+    }
+    body .container [class*=item]:nth-of-type(1) {
+      top: 0;
+      left: 0;
+    }
+    body .container [class*=item]:nth-of-type(2) {
+      top: 0;
+      left: 33%;
+    }
+    body .container [class*=item]:nth-of-type(3) {
+      top: 0;
+      left: 66%;
+    }
+    body .container [class*=item]:nth-of-type(4) {
+      top: 33%;
+      left: 0%;
+    }
+    body .container [class*=item]:nth-of-type(5) {
+      top: 33%;
+      left: 33%;
+    }
+    body .container [class*=item]:nth-of-type(6) {
+      top: 33%;
+      left: 66%;
+    }
+    body .container [class*=item]:nth-of-type(7) {
+      top: 66%;
+      left: 0;
+    }
+    body .container [class*=item]:nth-of-type(8) {
+      top: 66%;
+      left: 33%;
+    }
+    body .container [class*=item]:nth-of-type(9) {
+      top: 66%;
+      left: 66%;
+    }
+    body .container input {
+      display: none;
+    }
+    body .container input:checked + [class*=item] {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
